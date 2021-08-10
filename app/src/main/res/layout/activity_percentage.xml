@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#D0ECC002"
+    tools:context=".PERCENTAGE">
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:id="@+id/amID"
+        android:background="@drawable/roundeddittext"
+        android:textSize="50sp"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:hint="Amount"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/roundeddittext"
+        android:hint="Percentage"
+        android:singleLine="true"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/resultd"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roundeddittext"
+        android:text="="
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+
+    <TextView
+
+        android:text="Result"
+        android:textSize="60sp"
+        android:id="@+id/textID"
+        android:layout_width="fill_parent"
+        android:layout_height="270dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
