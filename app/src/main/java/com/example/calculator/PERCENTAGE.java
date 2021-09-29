@@ -26,9 +26,6 @@ public class PERCENTAGE extends AppCompatActivity {
         res=findViewById(R.id.resultd);
         textView=findViewById(R.id.textID);
 
-
-
-
         res.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,9 +40,8 @@ public class PERCENTAGE extends AppCompatActivity {
                     int amount=Integer.parseInt(amm.getText().toString());
                     int per=Integer.parseInt(pp.getText().toString());
 
-                    double re=amount/100;
-
-                    double rees=re*per;
+                    double  re=amount/100;
+                    double  rees= re*per;
 
                     String tmpStr10 = String.valueOf(rees);
                     textView.setText(tmpStr10);

@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     private void setOperatorOnClickListener() {
 
 
-        View.OnClickListener listener=new View.OnClickListener() {
+        View.OnClickListener listener= new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -112,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 findViewById(id).setOnClickListener(listener);
             }
+
 
 
             findViewById(R.id.btDot).setOnClickListener(new View.OnClickListener() {
@@ -143,7 +144,6 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.btEqual).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
 
                     onEqual();
 
